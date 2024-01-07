@@ -1,0 +1,116 @@
+/* large screen */
+@media(max-width:1046px){
+   html{
+    font-size: 60%;
+   }
+   .container{
+    padding: 0 80px;
+   }
+
+
+   .imgs_content{
+    padding: 2rem 0;
+   }
+
+   .form_data {
+    width: 70%; 
+}
+
+
+}
+@media(max-width:900px){
+   html{
+    font-size: 55%;
+   }
+   .container{
+    padding: 0 60px;
+   }
+   .btn{
+    display: block;
+   }
+   .navbar nav{
+    flex-direction: column;
+    position: fixed;
+    min-width: 100%;
+    min-height: 60vh;
+    top: 0;
+    right: 100%;
+    background: #000;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+   }
+   nav.active{
+    right: 0%;
+    transition: all 1s ease-in;
+   }
+   
+   .navbar nav li{
+    margin: 2rem 4rem ;
+   }
+   .navbar nav li a{
+    font-size: 1.4rem;
+    color: var(--white_color);
+    position: relative;
+   }
+ .close-btn{
+    position: absolute;
+    top: 0;
+    left: 90%;
+    margin: 25px;
+ }
+}
+
+/* 768 */
+@media(max-width:768px){
+    .sp_content{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .form_data {
+        width: 100%; 
+    }
+    .form_data form input{
+        width: 100%;
+    }
+
+/* ---------------food lover start */
+.menus_items_container {
+    grid-template-columns: repeat(2,1fr);
+}
+/* ---------------food lover close */
+
+.btn-cat{
+    margin: 1rem 1rem;
+}
+
+/* ------------static counter  start*/
+.counters{
+    grid-template-columns: repeat(2,1fr);
+}
+
+/* ------------static counter  close*/
+.footer_container{
+    grid-template-columns: repeat(2,1fr);
+}
+
+}
+
+
+@media(max-width:520px){
+
+    /* ---------------food lover start */
+.menus_items_container {
+    grid-template-columns: repeat(1,1fr);
+    }
+    /* ---------------food lover close */
+
+/* ------------static counter  start*/
+.counters{
+    grid-template-columns: repeat(1,1fr);
+}
+
+/* ------------static counter  close*/
+.footer_container{
+    grid-template-columns: repeat(1,1fr);
+}
+}
